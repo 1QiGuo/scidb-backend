@@ -2,7 +2,7 @@ import db from '@server/config/db.js'
 import { Op } from 'sequelize'
 import _ from 'lodash'
 // the schema directory can only access from ../
-const schema = '../../schema/scread_v1/cell_meta.js'
+const schema = '../../schema/SCIDB_test1/cell_meta.js'
 
 const screadDb = db.screadV1
 
