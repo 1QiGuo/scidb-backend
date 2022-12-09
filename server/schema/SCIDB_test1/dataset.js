@@ -8,46 +8,66 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     data_id: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.CHAR(50),
       allowNull: true
     },
     file_name: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     species: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     condition: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     region: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     gender: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
       allowNull: true
     },
-    stage_dpi: {
-      type: DataTypes.STRING(50),
+    stage: {
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     age: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
+      allowNull: true
+    },
+    mice_model: {
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     public_id: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.STRING(128),
       allowNull: true
     },
     n_cell: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.INTEGER,
       allowNull: true
     },
     n_original_cell: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    n_cluster: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    iris3_jobid: {
+      type: DataTypes.STRING(50),
+      allowNull: true
+    },
+    silhouette_score: {
+      type: DataTypes.STRING(50),
+      allowNull: true
+    },
+    ari_score: {
       type: DataTypes.STRING(50),
       allowNull: true
     }
@@ -62,34 +82,6 @@ module.exports = function(sequelize, DataTypes) {
         using: "BTREE",
         fields: [
           { name: "id" },
-        ]
-      },
-      {
-        name: "species",
-        using: "BTREE",
-        fields: [
-          { name: "species" },
-        ]
-      },
-      {
-        name: "public_id",
-        using: "BTREE",
-        fields: [
-          { name: "public_id" },
-        ]
-      },
-      {
-        name: "stage_dpi",
-        using: "BTREE",
-        fields: [
-          { name: "stage_dpi" },
-        ]
-      },
-      {
-        name: "data_id",
-        using: "BTREE",
-        fields: [
-          { name: "data_id" },
         ]
       },
     ]
