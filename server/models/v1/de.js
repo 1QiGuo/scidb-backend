@@ -57,13 +57,14 @@ const getSubclusterDeTableById = async (id, other) => {
     where: {
       a_data_id: id,
       b_data_id: id,
-      ct: other.ct.substring(0, 3).toLowerCase(),
+      ct: other.ct,
       cluster: other.second_id,
       type: 'subcluster'
     },
     attributes: ['avg_logFC', 'p_val_adj', 'pct_1', 'pct_2', 'gene'],
     order: screadDb.col('p_val_adj')
   })
+  //console.log(other)
   return result
 }
 
