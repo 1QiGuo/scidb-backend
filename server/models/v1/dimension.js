@@ -2,7 +2,7 @@ import db from '@server/config/db.js'
 import { Op } from 'sequelize'
 import _ from 'lodash'
 // the schema directory can only access from ../
-const schema = '../../schema/scread_v1/cell_meta.js'
+const schema = '../../schema/SCIDB_test1/cell_meta.js'
 
 const screadDb = db.screadV1
 
@@ -21,13 +21,6 @@ const getAllDimensionById = async function(id, type) {
     // order: 'random()',
   })
 
-  const nCells = result.length
-
-  if (nCells > 8000) {
-    const nStep = Math.floor(nCells / 5000)
-    const keepIndex = _.range(0, nCells, nStep)
-    result = keepIndex.map((i) => result[i])
-  }
   return result // return data
 }
 

@@ -39,12 +39,12 @@ find * | xargs -i{} kubectl cp koa-5986d86dd8-8wsxr:/usr/src/app/data
 kubectl cp /var/www/html/downloadFiles/scread/expression/expr.tgz koa-5986d86dd8-8wsxr:/usr/src/app/data
 kubectl exec koa-5986d86dd8-8wsxr -- tar xzf /usr/src/app/data/expr.tgz
 
-AD00101_expr.txt
-AD00102_expr.txt
-AD00103_expr.txt
-AD00104_expr.txt
-AD00105_expr.txt
-AD00107_expr.txt
+SCI00101_expr.txt
+SCI00102_expr.txt
+SCI00103_expr.txt
+SCI00104_expr.txt
+SCI00105_expr.txt
+SCI00106_expr.txt
 AD00108_expr.txt
 AD00109_expr.txt
 AD00110_expr.txt
