@@ -31,7 +31,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(128),
       allowNull: true
     },
-    stage: {
+    stage_dpi: {
       type: DataTypes.STRING(128),
       allowNull: true
     },
