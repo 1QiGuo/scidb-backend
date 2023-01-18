@@ -48,7 +48,6 @@ const getDeTableById = async (id, other) => {
     attributes: ['avg_logFC', 'p_val_adj', 'pct_1', 'pct_2', 'gene'],
     order: screadDb.col('p_val_adj')
   })
-
   return result
 }
 

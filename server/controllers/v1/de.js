@@ -11,7 +11,7 @@ const getDeTable = async function(ctx) {
     const result = await de.getDeTableById(id, other)
     ctx.body = result
   } else {
-    other.ct.substring(0, 2).toLowerCase()
+    // other.ct.substring(0, 2).toLowerCase()
     const result = await de.getDeTableById(id, other)
     ctx.body = result
   }
