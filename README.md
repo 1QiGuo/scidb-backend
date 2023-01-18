@@ -1,10 +1,10 @@
-# scREAD-backend
+# SCIdb-backend
 
 This is the API server for [scREAD](https://bmbls.bmi.osumc.edu/scread/). Ther server builds on top of Koa.js and connects to a MYSQL database. The server is developed by [Bioinformatics and Mathematical Biosciences Lab (BMBL)](https://u.osu.edu/bmbl/)
 
 ## For new users
 
-You can directly use the scREAD backend api service from a public URL: https://bmbls.bmi.osumc.edu/api/scread.
+You can directly use the SCIdb backend api service from a template public URL: https://bmbls.bmi.osumc.edu/api/scread.
 
 ### Example APIs
 
