@@ -1,28 +1,29 @@
 # SCIdb-backend
 
-This is the API server for [scREAD](https://bmbls.bmi.osumc.edu/scread/). Ther server builds on top of Koa.js and connects to a MYSQL database. The server is developed by [Bioinformatics and Mathematical Biosciences Lab (BMBL)](https://u.osu.edu/bmbl/)
+This is the API server for [SCIdb](). Ther server builds on top of Koa.js and connects to a MYSQL database. The server is developed by [Bioinformatics and Mathematical Biosciences Lab (BMBL)](https://u.osu.edu/bmbl/)
 
 ## For new users
 
-You can directly use the SCIdb backend api service from a template public URL: https://bmbls.bmi.osumc.edu/api/scread.
+You can directly use the SCIdb backend api service from a template public URL: will update.
 
 ### Example APIs
 
 ```
 # List all datasets
-https://bmbls.bmi.osumc.edu/api/scread/dataset
+will update
 
 # Search differentially expressed genes, e.g. GAD1 gene.
-https://bmbls.bmi.osumc.edu/api/scread/de/gene/gad1
+will update
 
 ```
 
 ## Install
 
 ```
-git clone https://github.com/OSU-BMBL/scread-backend.git
-cd scread-backend
-npm install
+will update
+#git clone https://github.com/OSU-BMBL/scread-backend.git
+#cd scread-backend
+#npm install
 ```
 
 ### Add configuration file
