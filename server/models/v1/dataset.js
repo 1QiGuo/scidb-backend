@@ -1,6 +1,6 @@
 import db from '@server/config/db.js'
 // the schema directory can only access from ../
-const schema = '../../schema/SCIDB_test1/dataset.js'
+const schema = '../../schema/scidb_test1/dataset.js'
 import Sequelize from 'sequelize'
 const screadDb = db.screadV1
 // use sequelize to import table structure

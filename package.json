@@ -1,5 +1,5 @@
 {
-  "name": "api-server-koa",
+  "name": "scidb-backend",
   "version": "1.0.0",
   "description": "the api server in BMBL",
   "scripts": {
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --ignore upload/ --ignore data/ main.js",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "serve": "cross-env NODE_ENV=production PORT=8889 pm2-runtime start pm2.json --watch"
+    "serve": "cross-env NODE_ENV=production PORT=9007 pm2-runtime start pm2.json --watch"
   },
   "keywords": [],
   "author": "Cankun Wang",

@@ -1,9 +1,9 @@
 module.exports = {
   apps: [
     {
-      name: 'scREAD backend',
+      name: 'SCIDB backend',
       script: 'main.js',
-      port: 8889,
+      port: 9007,
       watch: ['server', '.server/index.js', 'public', '.env'],
       args: 'start',
       max_memory_restart: '60G',

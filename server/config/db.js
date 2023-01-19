@@ -20,7 +20,7 @@ const screadV2 = new Sequelize(
 )
 const screadV1 = new Sequelize(
   `mysql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env
-    .DB_URL || 'localhost'}/SCIDB_test1`,
+    .DB_URL || 'localhost'}/scidb_test1`,
   {
     define: {
       timestamps: false

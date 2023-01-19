@@ -25,8 +25,8 @@ app.on('error', function(err, ctx) {
   consola.log('%s', err)
 })
 
-router.use('/api/scread/v1', V1Route.routes())
-router.use('/api/scread', ScreadRoute.routes())
+router.use('/scidb_api/scread/v1', V1Route.routes())
+router.use('/scidb_api/scread', ScreadRoute.routes())
 app.use(Cors())
 app.use(router.routes())
 export default app.listen(port, () => {

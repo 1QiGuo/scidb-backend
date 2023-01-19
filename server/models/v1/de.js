@@ -5,8 +5,8 @@ import cellType from './cellType'
 import dataSet from './dataset'
 
 // the schema directory can only access from ../../
-const deSchema = '../../schema/SCIDB_test1/de.js'
-const deMetaSchema = '../../schema/SCIDB_test1/de_meta.js'
+const deSchema = '../../schema/scidb_test1/de.js'
+const deMetaSchema = '../../schema/scidb_test1/de_meta.js'
 
 const screadDb = db.screadV1
 
