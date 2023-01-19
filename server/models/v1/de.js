@@ -93,9 +93,9 @@ const getDeGeneByName = async (id) => {
 const getControlledIds = async (id) => {
   let result = await deMeta.findAll({
     where: {
-      // data_id: id,
-      b_data_id: id,
-      description: 'Disease vs control (same region)'
+      data_id: id,
+      // b_data_id: id,
+      description: 'Disease vs control'
     },
     // attributes: ["b_data_id"]
     attributes: ['data_id']
@@ -124,11 +124,12 @@ const getOverlapDeg = async (
   ]
   let filter = {
     cluster: ctLongName,
-    ct: ctShortName,
+    ct: ctLongName,
     a_data_id: diseaseId,
     b_data_id: ctrlIds,
     p_val_adj: { [Op.lt]: 0.05 }
   }
+  
   if (direction == 'up') {
     filter.avg_logFC = { [Op.gt]: 0.5 }
   } else {
@@ -140,6 +141,7 @@ const getOverlapDeg = async (
     limit: top,
     attributes: attrs
   })
+  
   // get only attrs in the object and give them a 'rank' by order
   result = result.map((curr, index) => {
     let ret = {}
@@ -153,6 +155,7 @@ const getOverlapDeg = async (
     ret['rank'] = index + 1
     return ret
   })
+  
   return result
 }
 
